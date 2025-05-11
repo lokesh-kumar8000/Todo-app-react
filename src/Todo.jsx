@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify'; 
 
-function todo() {
+function Todo() {
   const [input , setInput] = useState(''); 
   const getData = JSON.parse(localStorage.getItem('alltodos')) ?? [];  
   const [allTask,setAllTask] = useState(getData); 
@@ -128,4 +128,4 @@ function todo() {
   );
 }
 
-export default todo;
+export default Todo;
